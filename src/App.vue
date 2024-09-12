@@ -1,61 +1,187 @@
 <script>
 export default {
-  data() {
-    return {
-      linksMenu: [
-        {
-          label: 'CHARATER',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'COMICS',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'MOVIES',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'TV',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'GAMES',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'COLLECTIBLES',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'VIDEOS',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'FANS',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'NEWS',
-          url: '#',
-          active: false,
-        },
-        {
-          label: 'SHOP',
-          url: '#',
-          active: false,
-        },
-      ]
+    data() {
+        return {
+            linksMenu: [
+                {
+                label: 'CHARACTERS',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'COMICS',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'MOVIES',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'TV',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'GAMES',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'COLLECTIBLES',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'VIDEOS',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'FANS',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'NEWS',
+                url: '#',
+                active: false,
+                },
+                {
+                label: 'SHOP',
+                url: '#',
+                active: false,
+                },
+            ],
+
+            // footer links
+            linksFooterNav:[
+                {
+                image: '../img/buy-comics-digital-comics.png',
+                title: 'DIGITAL COMICS',
+                },
+                {
+                image: '../img/buy-comics-merchandise.png',
+                title: 'DC MERCHANDISE',
+                },
+                {
+                image: '../img/buy-comics-subscriptions.png',
+                title: 'SUBSCRICTION',
+                },
+                {
+                image: '../img/buy-comics-shop-locator.png',
+                title: 'COMIC SHOP LOCATOR',
+                },
+                {
+                image: '../img/buy-dc-power-visa.png',
+                title: 'DC POWER VISA',
+                },
+            ],
+
+            // links footer links
+            // linksFooterLinks: [
+            //     {
+            //         title: 'DC COMICS',
+            //         link: [
+            //             {
+            //                 titleLink: 'Charater',
+            //             },
+            //             {
+            //                 titleLink: 'Comics',
+            //             },
+            //             {
+            //                 titleLink: 'Movies',
+            //             },
+            //             {
+            //                 titleLink: 'TV',
+            //             },
+            //             {
+            //                 titleLink: 'Games',
+            //             },
+            //             {
+            //                 titleLink: 'Videos',
+            //             },
+            //             {
+            //                 titleLink: 'News',
+            //             },
+            //         ]
+            //     },
+            //     {
+            //         title: 'DC',
+            //         link: [
+            //             {
+            //                 titleLink: 'Terms Of Use',
+            //             },
+            //             {
+            //                 titleLink: 'Privacy Policy (New)',
+            //             },
+            //             {
+            //                 titleLink: 'Ad Choices',
+            //             },
+            //             {
+            //                 titleLink: 'Advertising',
+            //             },
+            //             {
+            //                 titleLink: 'Jobs',
+            //             },
+            //             {
+            //                 titleLink: 'Subscrictions',
+            //             },
+            //             {
+            //                 titleLink: 'Talent Workshop',
+            //             },
+            //             {
+            //                 titleLink: 'CPSC Certificates',
+            //             },
+            //             {
+            //                 titleLink: 'Ratings',
+            //             },
+            //             {
+            //                 titleLink: 'Shop Help',
+            //             },
+            //             {
+            //                 titleLink: 'Contact us',
+            //             },
+            //         ]
+            //     },
+            //     {
+            //         title: 'SITES',
+            //         link: [
+            //             {
+            //                 titleLink: 'DC',
+            //             },
+            //             {
+            //                 titleLink: 'MAD Magazines',
+            //             },
+            //             {
+            //                 titleLink: 'DC Kings',
+            //             },
+            //             {
+            //                 titleLink: 'DC Universe',
+            //             },
+            //             {
+            //                 titleLink: 'DC Universe',
+            //             },
+            //             {
+            //                 titleLink: 'DC Power Visa',
+            //             },
+            //         ]
+            //     },
+            //     {
+            //         title: 'SHOP',
+            //         link: [
+            //             {
+            //                 titleLink: 'Shop DC',
+            //             },
+            //             {
+            //                 titleLink: 'Shop DC Collectibles',
+            //             },
+            //         ]
+            //     },
+            // ]
+        }
     }
-  }
 }
 </script>
 
@@ -66,38 +192,11 @@ export default {
             <div class="box-header-img">
                 <img src="../img/dc-logo.png" alt="dc-logo">
             </div>
-            <div>
+            <div class="box-links-header">
                 <ul>
-                <li>
-                    <a href="#">CHARATES</a>
-                </li>
-                <li>
-                    <a href="#">COMICS</a>
-                </li>
-                <li>
-                    <a href="#">MOVIES</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#">COLLECTIBLES</a>
-                </li>
-                <li>
-                    <a href="#">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="#">FANS</a>
-                </li>
-                <li>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                    <a href="#">SHOP</a>
-                </li>
+                    <li v-for="(link, i) in linksMenu" :key="i">
+                        <a href="#">{{ link.label }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -114,38 +213,16 @@ export default {
 
             <!-- first section -->
             <section class="footer-nav">
-              <ul>
-                  <li>
-                      <a href="#">
-                        <img src="../img/buy-comics-digital-comics.png" alt="dgital-comics">
-                        <p>DIGITAL COMICS</p>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                        <img src="../img/buy-comics-merchandise.png" alt="merchandise">
-                        <p>DC MERCHANDISE</p>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                        <img src="../img/buy-comics-subscriptions.png" alt="subscriptions">
-                        <p>SUBSCRICTION</p>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                        <img src="../img/buy-comics-shop-locator.png" alt="shop-locator">
-                        <p>COMIC SHOP LOCATOR</p>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                        <img src="../img/buy-dc-power-visa.png" alt="dc-power-visa">
-                        <p>DC POWER VISA</p>
-                      </a>
-                  </li>
-              </ul>
+                <div class="box-footer-nav">
+                    <ul>
+                        <li v-for="(link,i) in linksFooterNav" :key="i">
+                            <a :href="link.title">
+                              <img :src="link.image" :alt="link.title">
+                              <p>{{ link.title }}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <!-- second section -->
@@ -396,21 +473,30 @@ a:active {
     background-color: darkgreen;
 }
 
-.box-header-img{
+header .box-header-img{
     width: 5%;
 }
 
 .box-container {
-  width: 80%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-container {
-  height: 80px;
-  background-color: white;
+    height: 80px;
+    background-color: white;
+}
+
+header .box-links-header {
+    width: 80%;
+}
+
+header .box-links-header ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 header ul {
@@ -422,7 +508,7 @@ header ul li {
 }
 
 .main-container {
-    background-color: #2c67c0;
+    background-color: #696969;
 }
 
 footer .box-container {

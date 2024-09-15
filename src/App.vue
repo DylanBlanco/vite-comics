@@ -1,4 +1,7 @@
 <script>
+//import compomenenti
+import appMain from './components/AppMain.vue';
+
 export default {
     data() {
         return {
@@ -181,6 +184,9 @@ export default {
             //     },
             // ]
         }
+    },
+    components: {
+        appMain
     }
 }
 </script>
@@ -204,7 +210,7 @@ export default {
 
     <!-- main -->
     <main class="container main-container">
-        --&gt; Content goes here &lt;--
+        <appMain/>
     </main>
   
     <!-- footer -->

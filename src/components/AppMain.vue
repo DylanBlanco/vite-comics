@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             //main cards
-            mainCArds: [
+            mainCards: [
                 {
                     "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                     "price": "$19.99",
@@ -85,9 +85,106 @@ export default {
 <template>
     <!-- main -->
     <main class="container main-container">
-        --&gt; Content goes here &lt;--
+
+        <!-- jumbo section -->
+        <section class="jumbo-section">
+            <b>CURRENT SERIES</b>
+        </section>
+
+        <!-- main content -->
+        <section class="main-content">
+
+            <!-- cards -->
+            <a v-for="(card, i) in mainCards" :key="i" href="#" class="main-card">
+                <div class="img-card">
+                    <img :src="card.thumb" alt="card.series">
+                </div>
+                <div class="title-card">
+                    <p>
+                        {{ card.series }}
+                    </p>
+                </div>
+            </a>
+        </section>
+
+        <!-- button - load more -->
+        <section class="load-more">
+            <button>
+                <b>
+                    LOAD MORE
+                </b>
+            </button>
+        </section>
     </main>
 </template>
 
-<style scoped>
+<style>
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+main .jumbo-section {
+    height: 350px;
+    width: 100%;
+    background-image: url(/img/jumbotron.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+main .jumbo-section b {
+    background-color: #2c67c0;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 10%;
+    bottom: -20px;
+}
+
+main .main-content {
+    padding: 50px 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+main .main-content a {
+    text-decoration: none;
+    color: white;
+}
+
+main .main-content .main-card {
+    width: calc((100% / 6) - 5px);
+    margin: 20px 0;
+    justify-self: center;
+}
+
+main .load-more {
+    padding-bottom: 20px;
+}
+
+main button {
+    padding: 5px 20px;
+    background-color: #2c67c0;
+    color: white;
+    border: none;
+}
+
+main button b {
+    font-size: 1.1rem;
+}
+
+main button:hover {
+    color: aquamarine;
+    border: 2px solid gray;
+}
 </style>

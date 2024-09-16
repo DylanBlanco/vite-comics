@@ -454,7 +454,6 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #303030;
-  padding: 50px 0;
 }
 
 img {

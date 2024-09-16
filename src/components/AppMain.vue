@@ -183,7 +183,7 @@ main button b {
     font-size: 1.1rem;
 }
 
-main button:hover , a:hover {
+main button:hover , main a:hover {
     color: aquamarine;
     border: 2px solid gray;
 }
